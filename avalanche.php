@@ -1,5 +1,4 @@
-<?php include_once("avalanche.html"); ?>
-
+<?php header( 'Location: /avalanche.html' ) ;  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
