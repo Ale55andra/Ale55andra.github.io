@@ -1,3 +1,5 @@
+<?php include_once("avalanche.html"); ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
