@@ -63,17 +63,6 @@
             mymap.locate({setView: true, maxZoom: 16});
 
 
-    function onLocationFound(e) {
-        var radius = e.accuracy;
-
-        L.marker(e.latlng).addTo(mymap);
-
-        L.circle(e.latlng, radius).addTo(mymap);
-    }
-
-    mymap.on('locationfound', onLocationFound);
-
-
 
     var greenIcon = L.icon({
       iconUrl: 'icons8-skull-90.png',
