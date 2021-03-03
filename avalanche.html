@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -74,10 +73,15 @@
     mymap.on('locationfound', onLocationFound);
 
 
+    var blackIcon = L.icon({
+                iconUrl: 'img/icons8-skull-24.png',
+                iconSize:     [10, 10], // size of the icon
+                iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
 
+            });
     var greenIcon = L.icon({
-      iconUrl: 'icons8-skull-90.png',
-      iconSize:     [38, 38], // size of the icon
+      iconUrl: 'img/icons8-skull-90.png',
+      iconSize:     [20, 20], // size of the icon
       iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
       });
 
@@ -99,6 +103,8 @@
             mymarker.openPopup();
         }
   		}
+
+
 
 </script>
 
