@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-// Project Elsa Copyright 2021 by Alessandra Coote
 
 <html lang="en" dir="ltr">
 <head>
@@ -30,6 +29,7 @@
 </head>
 
 <body>
+  <div> Project Elsa Copyright 2021 by Alessandra Coote </div>
   <div id="mapid"></div>
   <script src="/Users/alessandracoote/Leaflet.heat-gh-pages/dist/leaflet-heat.js"></script>
   <script src="http://leaflet.github.io/Leaflet.markercluster/example/realworld.10000.js"></script>
@@ -64,15 +64,15 @@
             mymap.locate({setView: true, maxZoom: 16});
 
 
-    function onLocationFound(e) {
-        var radius = e.accuracy;
+//     function onLocationFound(e) {
+//         var radius = e.accuracy;
 
-        L.marker(e.latlng).addTo(mymap);
+//         L.marker(e.latlng).addTo(mymap);
 
-        L.circle(e.latlng, radius).addTo(mymap);
-    }
+//         L.circle(e.latlng, radius).addTo(mymap);
+//     }
 
-    mymap.on('locationfound', onLocationFound);
+//     mymap.on('locationfound', onLocationFound);
 
 
     var blackIcon = L.icon({
